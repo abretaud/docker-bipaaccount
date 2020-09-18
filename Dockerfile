@@ -53,7 +53,7 @@ RUN echo "memory_limit = -1" > $PHP_INI_DIR'/conf.d/memory-limit.ini' \
 ENV MAILER_HOST='127.0.0.1'\
     MAILER_USER='null'\
     MAILER_PASS='null'\
-    ENABLE_OP_CACHE=1\
+    ENABLE_OP_CACHE=1
 
 ADD entrypoint.sh /
 ADD /scripts/ /scripts/
