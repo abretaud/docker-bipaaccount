@@ -1,0 +1,18 @@
+cp /opt/parameters.yml.tmpl /var/www/bipaaccount/app/config/parameters.yml
+
+sed -i 's/$MAILER_HOST/'"$MAILER_HOST"'/g' /var/www/bipaaccount/app/config/parameters.yml
+sed -i 's/$MAILER_USER/'"$MAILER_USER"'/g' /var/www/bipaaccount/app/config/parameters.yml
+sed -i 's/$MAILER_PASS/'"$MAILER_PASS"'/g' /var/www/bipaaccount/app/config/parameters.yml
+sed -i 's/$SECRET/'"$SECRET"'/g' /var/www/bipaaccount/app/config/parameters.yml
+
+cd /var/www/bipaaccount
+
+# Remove this because of bug https://bugs.php.net/bug.php?id=54097 when using overlayfs
+rm -rf app/cache/dev
+
+./app/console cache:clear --env=prod --no-debug --no-warmup
+./app/console cache:clear --no-warmup
+
+./app/console assets:install --symlink web/
+
+./app/console assetic:dump --env=prod --no-debug
