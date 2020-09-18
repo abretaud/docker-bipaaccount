@@ -39,7 +39,7 @@ RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer \
 
 # Install Symfony and bundles
 RUN echo "memory_limit = -1" > $PHP_INI_DIR'/conf.d/memory-limit.ini' \
-    && composer create-project symfony/framework-standard-edition --quiet bipaaccount "2.2.*" \
+    && composer create-project symfony/framework-standard-edition --quiet bipaaccount "2.8.*" \
     && cd bipaaccount \
     && composer require symfony/assetic-bundle \
     && sed -i '/\$bundles = array/a new Bipaa\\LdapBundle\\BipaaLdapBundle(),' app/AppKernel.php \
