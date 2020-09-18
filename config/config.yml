@@ -52,3 +52,27 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+bipaa_ldap:
+    client:
+	    host:       "%ldap_host"
+        username:   "%ldap_username%"
+        password:   "%ldap_password%"
+    user_base_dn:   "%ldap_user_base_dn%"
+    user_filter:    "%ldap_user_filter%"
+    username_attribute:  "%ldap_username_attribute%"
+    group_base_dn:   "%ldap_group_base_dn%"
+    group_filter:    "%ldap_group_filter%"
+    group_name_attribute: "%ldap_group_name_attribute%"
+    group_user_attribute: "%ldap_group_user_attribute%"
+    security:
+	    role_prefix:   ROLE_LDAP_
+        default_roles: [ROLE_USER]
+    user_reactivation_delay:    %ldap_user_reactivation_delay%
+
+bipaa_account:
+    admin_email:                "%account_admin_email%"
+    galaxy_server:              "%account_galaxy_url%"
+    galaxy_apikey:              "%account_galaxy_apikey%"
+    http_user_data_root:        "%account_http_user_data_root%"
+    http_group_data_root:	"%account_http_group_data_root%"
