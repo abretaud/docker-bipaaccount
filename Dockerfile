@@ -21,7 +21,8 @@ RUN apt-get -q update \
  && a2enmod rewrite && a2enmod proxy && a2enmod proxy_http \
  && npm install -g uglify-js uglifycss \
  && ln -s /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libssl.so.10 \
- && ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libcrypto.so.10
+ && ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libcrypto.so.10 \
+ && pip install bioblend
 
 ENV TINI_VERSION v0.9.0
 RUN set -x \
