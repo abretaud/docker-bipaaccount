@@ -1,4 +1,4 @@
-FROM php:7.4-apache-buster
+FROM php:7.1-apache-buster
 
 MAINTAINER Anthony Bretaudeau <anthony.bretaudeau@inrae.fr>
 
