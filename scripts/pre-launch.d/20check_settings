@@ -4,7 +4,7 @@ sed -i 's|$MAILER_HOST|'"$MAILER_HOST"'|g' /var/www/bipaaccount/app/config/param
 sed -i 's|$MAILER_USER|'"$MAILER_USER"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$MAILER_PASS|'"$MAILER_PASS"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$SECRET|'"$SECRET"'|g' /var/www/bipaaccount/app/config/parameters.yml
-sed -i 's|$BASE_URL_PATH|'"$BASE_URL_PATH"'|g' /var/www/blast/app/config/parameters.yml
+sed -i 's|$BASE_URL_PATH|'"$BASE_URL_PATH"'|g' /var/www/bipaaccount/app/config/parameters.yml
 
 sed -i 's|$LDAP_HOST|'"$LDAP_HOST"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_USERNAME|'"$LDAP_USERNAME"'|g' /var/www/bipaaccount/app/config/parameters.yml
