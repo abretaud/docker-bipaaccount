@@ -55,7 +55,7 @@ swiftmailer:
 
 bipaa_ldap:
     client:
-	    host:       "%ldap_host"
+        host:       "%ldap_host"
         username:   "%ldap_username%"
         password:   "%ldap_password%"
     user_base_dn:   "%ldap_user_base_dn%"
@@ -66,7 +66,7 @@ bipaa_ldap:
     group_name_attribute: "%ldap_group_name_attribute%"
     group_user_attribute: "%ldap_group_user_attribute%"
     security:
-	    role_prefix:   ROLE_LDAP_
+        role_prefix:   ROLE_LDAP_
         default_roles: [ROLE_USER]
     user_reactivation_delay:    %ldap_user_reactivation_delay%
 
@@ -75,4 +75,4 @@ bipaa_account:
     galaxy_server:              "%account_galaxy_url%"
     galaxy_apikey:              "%account_galaxy_apikey%"
     http_user_data_root:        "%account_http_user_data_root%"
-    http_group_data_root:	"%account_http_group_data_root%"
+    http_group_data_root:       "%account_http_group_data_root%"
