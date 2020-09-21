@@ -1,0 +1,7 @@
+bipaa_account:
+    resource: "@BipaaAccountBundle/Resources/config/routing.yml"
+    prefix:   /
+login_check:
+    pattern:   /login_check
+logout:
+    path:   /logout
