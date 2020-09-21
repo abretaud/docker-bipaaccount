@@ -64,7 +64,8 @@ ENV MAILER_HOST='127.0.0.1'\
     ACCOUNT_GALAXY_URL="http://localhost:8000"\
     ACCOUNT_GALAXY_APIKEY="fakekey"\
     ACCOUNT_HTTP_USER_DATA_ROOT="/data/user"\
-    ACCOUNT_HTTP_GROUP_DATA_ROOT="/data/group"
+    ACCOUNT_HTTP_GROUP_DATA_ROOT="/data/group"\
+    BASE_URL_PATH='/'
 
 ADD entrypoint.sh /
 ADD /scripts/ /scripts/
