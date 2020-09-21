@@ -19,7 +19,7 @@ function run_scripts () {
 : ${MAILER_USER:='null'}
 : ${MAILER_PASS:='null'}
 
-SECRET=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1`
+export SECRET=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 64 | head -n 1`
 
 : ${APACHE_RUN_USER:='www-data'}
 : ${APACHE_RUN_GROUP:='www-data'}
