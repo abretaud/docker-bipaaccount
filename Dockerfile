@@ -43,6 +43,10 @@ RUN echo "memory_limit = -1" > $PHP_INI_DIR'/conf.d/memory-limit.ini' \
     && composer create-project symfony/framework-standard-edition --quiet bipaaccount "2.8.*" \
     && cd bipaaccount \
     && composer require symfony/assetic-bundle \
+    && composer require jms/security-extra-bundle \
+    && composer require jms/di-extra-bundle \
+    && composer require zendframework/zend-ldap \
+    && composer require twig/extensions \
     && sed -i '/\$bundles = array/a new Bipaa\\LdapBundle\\BipaaLdapBundle(),' app/AppKernel.php \
     && sed -i '/\$bundles = array/a new Bipaa\\AccountBundle\\BipaaAccountBundle(),' app/AppKernel.php \
     && sed -i '/\$bundles = array/a new Symfony\\Bundle\\AsseticBundle\\AsseticBundle(),' app/AppKernel.php \
