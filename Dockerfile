@@ -45,6 +45,8 @@ RUN echo "memory_limit = -1" > $PHP_INI_DIR'/conf.d/memory-limit.ini' \
     && composer require symfony/assetic-bundle \
     && sed -i '/\$bundles = array/a new Bipaa\\LdapBundle\\BipaaLdapBundle(),' app/AppKernel.php \
     && sed -i '/\$bundles = array/a new Symfony\\Bundle\\AsseticBundle\\AsseticBundle(),' app/AppKernel.php \
+    && sed -i '/src\/AppBundle/i "Bipaa\\\\LdapBundle\\\\": "vendor/bipaa/ldap-bundle/Bipaa/LdapBundle",' composer.json \
+    && composer dump-autoload \
     && rm web/favicon.ico \
     && cd .. \
     && rm -rf html \
