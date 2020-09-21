@@ -44,6 +44,9 @@ assetic:
             bin: /usr/local/bin/uglifycss
         uglifyjs2:
             bin: /usr/local/bin/uglifyjs
+    bundles:
+        - BipaaLdapBundle
+        - BipaaAccountBundle
 
 # Swiftmailer Configuration
 swiftmailer:
