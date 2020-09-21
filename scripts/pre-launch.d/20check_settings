@@ -11,7 +11,7 @@ sed -i 's|$LDAP_USERNAME|'"$LDAP_USERNAME"'|g' /var/www/bipaaccount/app/config/p
 sed -i 's|$LDAP_PASSWORD|'"$LDAP_PASSWORD"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_USER_BASE_DN|'"$LDAP_USER_BASE_DN"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_USER_FILTER|'"$LDAP_USER_FILTER"'|g' /var/www/bipaaccount/app/config/parameters.yml
-sed -i 's|$LDAP_USERNAME_ATTRIBUTE|'"$LDAP_USERNAME_ATTRIBUTE"'|g' /var/www/bipaaccount/app/config/parameters.yml
+sed -i 's|$LDAP_UID_ATTRIBUTE|'"$LDAP_UID_ATTRIBUTE"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_GROUP_BASE_DN|'"$LDAP_GROUP_BASE_DN"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_GROUP_FILTER|'"$LDAP_GROUP_FILTER"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$LDAP_GROUP_NAME_ATTRIBUTE|'"$LDAP_GROUP_NAME_ATTRIBUTE"'|g' /var/www/bipaaccount/app/config/parameters.yml
