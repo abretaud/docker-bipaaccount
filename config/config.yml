@@ -58,7 +58,7 @@ swiftmailer:
 
 bipaa_ldap:
     client:
-        host:       "%ldap_host"
+        host:       "%ldap_host%"
         username:   "%ldap_username%"
         password:   "%ldap_password%"
     user_base_dn:   "%ldap_user_base_dn%"
