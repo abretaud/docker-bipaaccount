@@ -10,7 +10,7 @@ RUN mkdir -p /usr/share/man/man1 /usr/share/man/man7
 RUN apt-get -q update \
 && DEBIAN_FRONTEND=noninteractive apt-get -yq --no-install-recommends install \
     file libfreetype6 libjpeg62-turbo libpng16-16 libx11-6 libxpm4 gnupg \
-    wget patch git unzip python-pip libyaml-dev libzip4 libzip-dev \
+    wget patch git unzip python-pip libyaml-dev libzip4 libzip-dev nano \
     python-dev python-setuptools cron libhwloc5 build-essential libssl-dev \
     zlib1g zlib1g-dev dirmngr libldap2-dev libonig-dev \
  && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
