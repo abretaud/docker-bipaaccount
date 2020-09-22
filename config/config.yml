@@ -40,10 +40,10 @@ assetic:
     debug:          "%kernel.debug%"
     filters:
         cssrewrite: ~
-        uglifycss:
-            bin: /usr/local/bin/uglifycss
-        uglifyjs2:
-            bin: /usr/local/bin/uglifyjs
+        yui_css:
+             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+        yui_js:
+             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
     bundles:
         - BipaaLdapBundle
         - BipaaAccountBundle
