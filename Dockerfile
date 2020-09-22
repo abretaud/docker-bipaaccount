@@ -68,7 +68,8 @@ ENV MAILER_HOST='127.0.0.1'\
     BASE_URL_PATH='/'
 
 ADD entrypoint.sh /
-ADD /scripts/ /scripts/
+ADD scripts/ /scripts/
+ADD apach/ /etc/apache2/sites-enabled/
 
 ADD config/parameters.yml.tmpl /opt/parameters.yml.tmpl
 ADD config/config.yml /var/www/bipaaccount/app/config/config.yml
