@@ -58,6 +58,8 @@ RUN echo "memory_limit = -1" > $PHP_INI_DIR'/conf.d/memory-limit.ini' \
     && ln -s /var/www/bipaaccount/web html \
     && sed -i "/createFromGlobals/a Request::setTrustedProxies(array('127.0.0.1', \$request->server->get('REMOTE_ADDR')));" /var/www/bipaaccount/web/app.php
 
+RUN mkdir -p /data/user /data/group
+
 ENV MAILER_HOST='127.0.0.1'\
     MAILER_PORT="25"\
     MAILER_USER='null'\
