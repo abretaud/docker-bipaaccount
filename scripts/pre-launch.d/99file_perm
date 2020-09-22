@@ -1,4 +1,0 @@
-chown -R ${APACHE_RUN_USER}:${APACHE_RUN_GROUP} /var/www/bipaaccount || echo
-find /var/www/bipaaccount -type d -exec chmod u=rwx,g=rx,o= '{}' \; || echo
-find /var/www/bipaaccount -type f -exec chmod u=rw,g=r,o= '{}' \; || echo
-chmod a+x /var/www/bipaaccount/app/console
