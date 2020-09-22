@@ -16,6 +16,7 @@ function run_scripts () {
 
 ### auto-configure database from environment-variables
 : ${MAILER_HOST:='127.0.0.1'}
+: ${MAILER_PORT:='25'}
 : ${MAILER_USER:='null'}
 : ${MAILER_PASS:='null'}
 

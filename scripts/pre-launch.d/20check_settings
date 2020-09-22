@@ -1,6 +1,7 @@
 cp /opt/parameters.yml.tmpl /var/www/bipaaccount/app/config/parameters.yml
 
 sed -i 's|$MAILER_HOST|'"$MAILER_HOST"'|g' /var/www/bipaaccount/app/config/parameters.yml
+sed -i 's|$MAILER_PORT|'"$MAILER_PORT"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$MAILER_USER|'"$MAILER_USER"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$MAILER_PASS|'"$MAILER_PASS"'|g' /var/www/bipaaccount/app/config/parameters.yml
 sed -i 's|$SECRET|'"$SECRET"'|g' /var/www/bipaaccount/app/config/parameters.yml
