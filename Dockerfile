@@ -74,5 +74,6 @@ ADD apache/ /etc/apache2/sites-enabled/
 ADD config/parameters.yml.tmpl /opt/parameters.yml.tmpl
 ADD config/config.yml /var/www/bipaaccount/app/config/config.yml
 ADD config/routing.yml /var/www/bipaaccount/app/config/routing.yml
+ADD config/security.yml /var/www/bipaaccount/app/config/security.yml
 
 CMD ["/entrypoint.sh"]
