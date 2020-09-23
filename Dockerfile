@@ -12,7 +12,7 @@ RUN apt-get -q update \
     file libfreetype6 libjpeg62-turbo libpng16-16 libx11-6 libxpm4 gnupg \
     wget patch git unzip python-pip libyaml-dev libzip4 libzip-dev nano \
     python-dev python-setuptools cron libhwloc5 build-essential libssl-dev \
-    zlib1g zlib1g-dev dirmngr libldap2-dev libonig-dev default-jre libapache2-mod-authnz-external \
+    zlib1g zlib1g-dev dirmngr libldap2-dev libonig-dev default-jre \
  && docker-php-ext-install mbstring zip ldap \
  && rm -rf /var/lib/apt/lists/* \
  && a2enmod rewrite && a2enmod proxy && a2enmod proxy_http && a2enmod authnz_ldap \
