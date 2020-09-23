@@ -15,7 +15,7 @@ RUN apt-get -q update \
     zlib1g zlib1g-dev dirmngr libldap2-dev libonig-dev default-jre \
  && docker-php-ext-install mbstring zip ldap \
  && rm -rf /var/lib/apt/lists/* \
- && a2enmod rewrite && a2enmod proxy && a2enmod proxy_http \
+ && a2enmod rewrite && a2enmod proxy && a2enmod proxy_http && a2enmod authnz_ldap \
  && ln -s /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libssl.so.10 \
  && ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libcrypto.so.10 \
  && pip install bioblend
